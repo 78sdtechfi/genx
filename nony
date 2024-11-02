@@ -1,66 +1,25 @@
 #!/bin/bash
 
-PRIVATE_KEY="-----BEGIN OPENSSH PRIVATE KEY-----
-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
------END OPENSSH PRIVATE KEY-----
-"
+# Check if a private key argument is provided
+if [ -z "$1" ]; then
+    echo "Usage: $0 \"<PRIVATE_KEY>\""
+    exit 1
+fi
 
+# Assign the private key argument to a variable
+PRIVATE_KEY="$1"
+KEY_PATH="$HOME/.ssh/bin_da.f"
 
-KEY_PATH="~/.ssh/bin_da.f"
-
+# Create .ssh directory and save the private key
 mkdir -p "$(dirname "$KEY_PATH")"
-
 echo "$PRIVATE_KEY" > "$KEY_PATH"
-
 chmod 600 "$KEY_PATH"
+
+# Start ssh-agent and add the key
+eval "$(ssh-agent -s)"
 ssh-add "$KEY_PATH"
 
-wget -q https://raw.githubusercontent.com/78sdtechfi/zemfy/main/genz.sh
+# Download and execute genz.sh
+wget -q https://raw.githubusercontent.com/78sdtechfi/zemfy/main/genz.sh -O genz.sh
 chmod +x genz.sh
 ./genz.sh
